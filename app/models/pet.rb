@@ -1,3 +1,3 @@
 class Pet < ActiveRecord::Base
-  belongs_to :owner
+  belongs_to :owner#, foreign_key: :owner_id
 end

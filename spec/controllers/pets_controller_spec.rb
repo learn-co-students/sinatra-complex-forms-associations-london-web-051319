@@ -48,6 +48,7 @@ describe "Pets Controller" do
       @owner = Owner.last
       @pet = Pet.last
       expect(@pet.name).to eq("Pippa")
+      puts @pet.owner
       expect(@pet.owner.name).to eq("Mary Nelson")
     end
 
